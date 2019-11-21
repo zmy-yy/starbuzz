@@ -5,7 +5,7 @@ body {
   margin:           0px;
 }
 
-#header {
+header {
   background-color: #675c47;
   margin:           10px 10px 0px 10px;
   height:           108px;
@@ -19,7 +19,7 @@ body {
   vertical-align: top;
 }
 
-#sidebar {
+aside {
   display: table-cell;
   background:       #efe5d0 url(images/background.gif) bottom right;
   font-size:        105%;
@@ -28,7 +28,7 @@ body {
   width:            280px;
 }
 
-#footer {
+footer {
   background-color: #675c47;
   color:            #efe5d0;
   text-align:       center;
@@ -71,7 +71,7 @@ div#tableRow {
   display: table-row;
 }
 
-#main {
+section#main {
   display: table-cell;
   background: #efe5d0 url(images/background.gif) top left;
   font-size: 105%;
@@ -79,27 +79,39 @@ div#tableRow {
   vertical-align: top;
 }
 
-#drinks {
-  float: left;
+section#drinks {
+  display: table-cell;
   background-color: #efe5d0;
+  width: 20%;
   padding: 15px;
   vertical-align: top;
 }
 
-#headerSlogan {
+header img#headerSlogan {
   float: right;
 }
 
-#award {
-  position: absolute;
-  top: 30px;
-  left: 365px;
+nav {
+  background-color: #efe5d0;
+  margin: 10px 10px 0px 10px;
 }
-#coupon {
-  position: fixed;
-  top: 350px;
-  left: -90px;
+nav ul {
+  margin: 0px;
+  list-style-type: none;
+  padding: 5px 0px 5px 0px;
 }
-#coupon a, img {
-  border: none;
+
+nav ul li {
+  display: inline;
+  padding: 5px 10px 5px 10px;
+}
+
+nav ul li a:link, nav ul li a:visited {
+  color: #954b4b;
+  border-bottom: none;
+  font-weight: bold;
+}
+
+nav ul li.selected {
+  background-color: #c8b99c;
 }
